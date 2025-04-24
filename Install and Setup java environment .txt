@@ -1,0 +1,45 @@
+Step 1: Install Java (JDK)
+Go to this website:
+👉 https://www.oracle.com/java/technologies/javase-downloads.html
+Click Download for Java JDK (for Windows).
+After the file is downloaded, open it and click “Next” again and again until it finishes.
+🔧 Set Java Path (Important Step)
+Right-click on This PC → click Properties → click Advanced system settings.
+In the window, click Environment Variables.
+Under “System Variables”, click New:
+Name: JAVA_HOME
+Value: the folder where Java was installed (like C:\Program Files\Java\jdk-21)
+Find the Path variable → Click Edit → Click New, and add:
+
+%JAVA_HOME%\bin
+✅ Test it:
+Open CMD and type:
+java -version
+You should see the version of Java. That means it’s working!
+
+
+✅ Step 2: Install Eclipse IDE
+Go to:
+👉 https://www.eclipse.org/downloads/packages/
+Download for Windows (or your system).
+After downloading, right-click the ZIP file → Extract All.
+Open the extracted folder → double-click eclipse.exe to open Eclipse.
+Choose a folder (workspace) → Click Launch.
+✅ Step 3: Write Your First Java Program (Hello World)
+In Eclipse, click File > New > Java Project
+Type any name (like MyProject) → Click Finish
+Right-click on the project → New > Package
+Name it (like mypackage) → Click Finish
+Right-click the package → New > Class
+Name it HelloWorld
+Check the box that says public static void main... → Click Finish
+Paste this code inside the class:
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+Right-click on HelloWorld.java → Run As > Java Application
+
+✅ You’ll see:
+Hello, World!
